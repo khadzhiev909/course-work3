@@ -6,7 +6,6 @@ import java.util.Objects;
 
 @Entity
 public class NotificationTask {
-
     @Id
     @GeneratedValue
     private Long id;
