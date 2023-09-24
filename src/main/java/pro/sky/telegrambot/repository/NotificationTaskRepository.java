@@ -10,6 +10,5 @@ import java.util.Date;
 
 @Repository
 public interface NotificationTaskRepository extends JpaRepository<NotificationTask, Long> {
-
     Collection<NotificationTask> findNotificationTaskByDataTime(LocalDateTime localDateTime);
 }
