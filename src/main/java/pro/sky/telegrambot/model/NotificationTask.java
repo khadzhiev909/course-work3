@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-
 @Entity
 public class NotificationTask {
     @Id
@@ -13,7 +12,6 @@ public class NotificationTask {
     private Long chatId;
     private String message;
     private LocalDateTime dataTime;
-
 
     public NotificationTask() {
     }
