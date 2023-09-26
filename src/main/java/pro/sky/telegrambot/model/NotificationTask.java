@@ -7,7 +7,7 @@ import java.util.Objects;
 @Entity
 public class NotificationTask {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long chatId;
     private String message;

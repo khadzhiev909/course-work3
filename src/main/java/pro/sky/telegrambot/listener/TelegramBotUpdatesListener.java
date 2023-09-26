@@ -58,10 +58,10 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
             String getMessage = update.message().text();
 
             //compliance check
-            switch (getMessage) {
-                case "/start":
-                    sendResponse(message);
+            if (getMessage.equalsIgnoreCase("/start")) {
+                sendResponse(message);
             }
+
 
             //Pattern —  как раз задаёт паттерн для поиска (регулярное выражение)
             Pattern pattern = Pattern.compile("([0-9\\.\\:\\s]{16})(\\s)([\\W+]+)");
