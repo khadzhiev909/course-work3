@@ -66,7 +66,6 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
             //Pattern —  как раз задаёт паттерн для поиска (регулярное выражение)
             Pattern pattern = Pattern.compile("([0-9\\.\\:\\s]{16})(\\s)([\\W+]+)");
 
-
             //Чтобы проверить, удовлетворяет ли вообще строка паттерну, используют метод matches
             Matcher matcher = pattern.matcher(getMessage);
 
